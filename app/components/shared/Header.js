@@ -15,7 +15,7 @@ export const Header = ({ organizationName, navLinks }) => {
       <Link
         key={link.id}
         href={link.url}
-        className="text-gray-600 hover:text-gray-900"
+        className="text-foreground hover:text-primary"
       >
         {link.label}
       </Link>
@@ -23,10 +23,10 @@ export const Header = ({ organizationName, navLinks }) => {
   };
 
   return (
-    <header className="fixed z-10 w-full bg-white shadow-md">
+    <header className="bg-background fixed z-10 w-full shadow-md">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-gray-800">
+        <Link href="/" className="text-foreground text-2xl font-bold">
           <div>{organizationName}</div>
         </Link>
 
@@ -40,16 +40,16 @@ export const Header = ({ organizationName, navLinks }) => {
           <button
             onClick={toggleMobileMenu}
             aria-label="Toggle Menu"
-            className="text-2xl text-gray-800"
+            className="text-foreground text-2xl"
           >
-            <Hamburger />
+            <Hamburger backgroundColor="bg-foreground" />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="bg-white shadow-md md:hidden">
+        <div className="bg-background shadow-md md:hidden">
           <nav className="flex flex-col items-center space-y-4 p-4">
             <NavLinks />
           </nav>

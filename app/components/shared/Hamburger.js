@@ -8,10 +8,11 @@ export const Hamburger = ({
     margin: `${marginVertical} 0`, // Use 'margin' instead of 'marginVertical' to apply top and bottom margin
     height,
     width,
-    backgroundColor,
   };
 
-  const Line = () => <div style={lineStyle}></div>;
+  const Line = () => (
+    <div className={`${backgroundColor}`} style={lineStyle}></div>
+  );
 
   return (
     <div>
