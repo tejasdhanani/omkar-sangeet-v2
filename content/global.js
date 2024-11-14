@@ -1,4 +1,5 @@
 export const organization = {
+  logo: "Omkar Sangeet",
   name: "Omkar Sangeet Mahavidyalaya",
   description:
     "Omkar Sangeet is an Indian classical music academy offering classes for Vocal, Harmonium, Piano, Keyboard, Kathak, and more.",

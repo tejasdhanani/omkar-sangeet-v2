@@ -3,8 +3,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { Hamburger } from "./Hamburger";
 import { usePathname } from "next/navigation";
+import { navLinks, organization } from "@/content/global";
 
-export const Header = ({ organizationName, navLinks }) => {
+export const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -26,26 +27,28 @@ export const Header = ({ organizationName, navLinks }) => {
 
   return (
     <header className="fixed top-0 z-10 h-16 w-full bg-background shadow-md">
-      <div className="container mx-auto flex items-center justify-between p-4">
-        {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-secondary">
-          <div>{organizationName}</div>
-        </Link>
+      <div className="flex h-full items-center justify-center">
+        <div className="container mx-auto flex items-center justify-between px-4">
+          {/* Logo */}
+          <Link href="/" className="text-xl font-bold text-secondary">
+            <div>{organization.logo}</div>
+          </Link>
 
-        {/* Navigation Links */}
-        <nav className="hidden space-x-6 md:flex">
-          <NavLinks />
-        </nav>
+          {/* Navigation Links */}
+          <nav className="hidden space-x-6 md:flex">
+            <NavLinks />
+          </nav>
 
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
-          <button
-            onClick={toggleMobileMenu}
-            aria-label="Toggle Menu"
-            className="text-2xl text-foreground"
-          >
-            <Hamburger backgroundColor="bg-foreground" />
-          </button>
+          {/* Mobile Menu Toggle */}
+          <div className="md:hidden">
+            <button
+              onClick={toggleMobileMenu}
+              aria-label="Toggle Menu"
+              className="text-2xl text-foreground"
+            >
+              <Hamburger backgroundColor="bg-foreground" />
+            </button>
+          </div>
         </div>
       </div>
 
