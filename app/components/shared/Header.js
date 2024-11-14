@@ -2,9 +2,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Hamburger } from "./Hamburger";
+import { usePathname } from "next/navigation";
 
 export const Header = ({ organizationName, navLinks }) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -15,7 +17,7 @@ export const Header = ({ organizationName, navLinks }) => {
       <Link
         key={link.id}
         href={link.url}
-        className="text-foreground hover:text-primary"
+        className={`text-foreground hover:text-primary ${pathname === link.url ? "text-primary" : ""}`}
       >
         {link.label}
       </Link>
@@ -23,10 +25,10 @@ export const Header = ({ organizationName, navLinks }) => {
   };
 
   return (
-    <header className="bg-background fixed z-10 w-full shadow-md">
+    <header className="fixed top-0 z-10 h-16 w-full bg-background shadow-md">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
-        <Link href="/" className="text-foreground text-2xl font-bold">
+        <Link href="/" className="text-xl font-bold text-secondary">
           <div>{organizationName}</div>
         </Link>
 
@@ -40,7 +42,7 @@ export const Header = ({ organizationName, navLinks }) => {
           <button
             onClick={toggleMobileMenu}
             aria-label="Toggle Menu"
-            className="text-foreground text-2xl"
+            className="text-2xl text-foreground"
           >
             <Hamburger backgroundColor="bg-foreground" />
           </button>
