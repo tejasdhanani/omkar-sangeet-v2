@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Cross, Hamburger } from "./Hamburger";
+import { Hamburger } from "./Hamburger";
 import { usePathname } from "next/navigation";
 import { navLinks, organization } from "@/content/global";
 import Image from "next/image";
@@ -16,7 +16,7 @@ export const Header = () => {
         key={link.id}
         href={link.url}
         onClick={() => setMobileMenuOpen(false)}
-        className={`text-foreground hover:text-[#4504A7] ${pathname === link.url ? "text-[#4504A7]" : ""}`}
+        className={`text-foreground hover:text-secondary ${pathname === link.url ? "border-b-2 border-secondary text-secondary" : ""}`}
       >
         {link.label}
       </Link>
@@ -30,7 +30,7 @@ export const Header = () => {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center justify-center text-xl font-bold text-[#B02321]"
+            className="flex items-center justify-center text-xl font-bold text-primary"
           >
             <Image
               src="/logo.png"
