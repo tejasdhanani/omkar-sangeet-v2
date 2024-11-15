@@ -1,24 +1,22 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Hamburger } from "./Hamburger";
+import { Cross, Hamburger } from "./Hamburger";
 import { usePathname } from "next/navigation";
 import { navLinks, organization } from "@/content/global";
+import Image from "next/image";
 
 export const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
 
   const NavLinks = () => {
     return navLinks.map((link) => (
       <Link
         key={link.id}
         href={link.url}
-        className={`text-foreground hover:text-primary ${pathname === link.url ? "text-primary" : ""}`}
+        onClick={() => setMobileMenuOpen(false)}
+        className={`text-foreground hover:text-[#4504A7] ${pathname === link.url ? "text-[#4504A7]" : ""}`}
       >
         {link.label}
       </Link>
@@ -26,11 +24,21 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-10 h-16 w-full bg-background shadow-md">
+    <header className="top-0 z-10 h-32 w-full bg-background shadow-md">
       <div className="flex h-full items-center justify-center">
         <div className="container mx-auto flex items-center justify-between px-4">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-secondary">
+          <Link
+            href="/"
+            className="flex items-center justify-center text-xl font-bold text-[#B02321]"
+          >
+            <Image
+              src="/logo.png"
+              className="h-28 w-28"
+              width={100}
+              height={100}
+              alt="Picture of the author"
+            />
             <div>{organization.logo}</div>
           </Link>
 
@@ -42,7 +50,7 @@ export const Header = () => {
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button
-              onClick={toggleMobileMenu}
+              onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle Menu"
               className="text-2xl text-foreground"
             >
@@ -54,7 +62,7 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="bg-background shadow-md md:hidden">
+        <div className="fixed w-full bg-background shadow-md md:hidden">
           <nav className="flex flex-col items-center space-y-4 p-4">
             <NavLinks />
           </nav>
