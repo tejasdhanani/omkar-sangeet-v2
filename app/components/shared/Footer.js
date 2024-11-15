@@ -1,5 +1,6 @@
 import { organization } from "@/content/global";
 import Link from "next/link";
+import SocialMedia from "../SocialMedia";
 
 export const Footer = () => {
   return (
@@ -14,29 +15,10 @@ export const Footer = () => {
               classes for Vocal, Harmonium, Piano, Keyboard, Kathak, and more.
             </p>
           </div>
-
           {/* Follow Us - Social Media Links */}
           <div className="mb-6 w-full md:mb-0 md:w-1/3">
             <h3 className="mb-4 text-xl font-bold">Follow Us</h3>
-            <div className="flex space-x-4">
-              {/* Replace # with actual links */}
-              <Link href="#" className="hover:text-gray-400">
-                <span className="sr-only">Facebook</span>
-                &#xf09a; {/* FontAwesome Facebook icon */}
-              </Link>
-              <Link href="#" className="hover:text-gray-400">
-                <span className="sr-only">Instagram</span>
-                &#xf16d; {/* FontAwesome Instagram icon */}
-              </Link>
-              <Link href="#" className="hover:text-gray-400">
-                <span className="sr-only">Twitter</span>
-                &#xf099; {/* FontAwesome Twitter icon */}
-              </Link>
-              <Link href="#" className="hover:text-gray-400">
-                <span className="sr-only">YouTube</span>
-                &#xf167; {/* FontAwesome YouTube icon */}
-              </Link>
-            </div>
+            <SocialMedia />
           </div>
 
           {/* Contact Information */}
