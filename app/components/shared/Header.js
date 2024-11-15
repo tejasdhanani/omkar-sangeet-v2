@@ -33,7 +33,7 @@ export const Header = () => {
             className="flex items-center justify-center text-xl font-bold text-primary"
           >
             <Image
-              src="/logo.png"
+              src="/Omkar Sangeet logo.png"
               className="h-28 w-28"
               width={100}
               height={100}
