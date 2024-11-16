@@ -62,7 +62,7 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed w-full bg-background shadow-md md:hidden">
+        <div className="fixed z-20 w-full bg-background shadow-md md:hidden">
           <nav className="flex flex-col items-center space-y-4 p-4">
             <NavLinks />
           </nav>
