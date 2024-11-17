@@ -39,7 +39,10 @@ export const Header = () => {
               height={100}
               alt="Picture of the author"
             />
-            <div>{organization.logo}</div>
+            <div>
+              {organization.logo}
+              <p className="text-xs text-secondary">(ABGMVM affiliated)</p>
+            </div>
           </Link>
 
           {/* Navigation Links */}
