@@ -42,11 +42,6 @@ export const navLinks = [
     label: "Gallery",
     url: "/gallery",
   },
-  {
-    id: 4,
-    label: "Contact",
-    url: "/contact",
-  },
 ];
 
 export const footerSections = [

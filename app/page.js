@@ -9,11 +9,11 @@ export default function Home() {
       <HeroSection
         imageSrc="/lohri-celebration-india.jpg"
         imageAltText="all types of instruments"
-        ButtonAction={() => alert("Button Clicked")}
         bgFilterOpacity={50}
         HeroTitle={`Welcome to ${organization.name}`}
         HeroSubTitle="Experience the Essence of Indian Classical Music"
         ButtonText="Explore Courses"
+        url="/courses"
       />
       <AboutUs />
       {/* Courses Section */}

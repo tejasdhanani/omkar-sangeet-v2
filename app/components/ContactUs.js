@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ContactUs() {
   return (
-    <>
+    <div>
       <p>
         Email:{" "}
         <Link
@@ -21,6 +21,6 @@ export default function ContactUs() {
           </Link>
         </div>
       ))}
-    </>
+    </div>
   );
 }
