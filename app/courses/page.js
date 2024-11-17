@@ -2,9 +2,10 @@ export default function CoursesPage() {
   const courses = [
     { name: "Harmonium", imageSrc: "/harmonium.jpg", opacity: 60 },
     { name: "Vocals", imageSrc: "/vocals.jpg", opacity: 55 },
+    { name: "Guitar", imageSrc: "/guitar.jpg", opacity: 50 },
+    { name: "Keyboard", imageSrc: "/piano.jpg", opacity: 50 },
     { name: "Kathak", imageSrc: "/kathak.jpg", opacity: 50 },
     { name: "Tabla", imageSrc: "/tabla.jpg", opacity: 50 },
-    { name: "Keyboard", imageSrc: "/piano.jpg", opacity: 50 },
     { name: "Sugam", imageSrc: "/sugam.jpg", opacity: 50 },
     // Add more courses here
   ];
