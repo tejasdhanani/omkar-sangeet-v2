@@ -13,7 +13,7 @@ export const Footer = () => {
         ))}
       </div>
 
-      <div className="relative h-0 w-full overflow-hidden pb-[75.25%] md:pb-[35%]">
+      <div className="relative h-0 w-full overflow-hidden pb-[75.25%] md:pb-[20%]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.0808631609984!2d72.53320767600873!3d23.05749681502272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85edf6b3ac8d%3A0x1962a7b861b63b21!2sOmkar%20Sangeet%20Mahavidyalaya!5e0!3m2!1sen!2sca!4v1731789460088!5m2!1sen!2sca"
           style={{ border: 0 }}

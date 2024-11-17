@@ -27,7 +27,9 @@ export default function AboutUs() {
                 href="https://abgmvm.org"
                 target="_blank"
               >
-                <strong>Akhil Bhartiya Gandharva Mahavidyalaya Mandal</strong>
+                <strong>
+                  Akhil Bhartiya Gandharva Mahavidyalaya Mandal Mumbai
+                </strong>
               </Link>{" "}
               (Government organization) and we are located in Ahmedabad. It is
               special place where you can discover the wonderful world of Indian
