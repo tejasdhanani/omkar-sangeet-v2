@@ -30,7 +30,7 @@ export const Header = () => {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center justify-center text-xl font-bold text-primary"
+            className="flex items-center justify-center text-2xl font-bold text-primary sm:text-3xl"
           >
             <Image
               src="/Omkar Sangeet logo.png"
@@ -41,7 +41,7 @@ export const Header = () => {
             />
             <div>
               {organization.logo}
-              <p className="text-xs text-secondary">(ABGMVM affiliated)</p>
+              {/* <p className="text-xs text-secondary">(ABGMVM affiliated)</p> */}
             </div>
           </Link>
 
