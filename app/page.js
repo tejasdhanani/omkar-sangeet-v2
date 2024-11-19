@@ -2,6 +2,7 @@
 import { organization } from "@/content/global";
 import HeroSection from "./components/HeroSection";
 import AboutUs from "./components/AboutUs";
+import { BadgeSection } from "./components/Badge";
 
 export default function Home() {
   return (
@@ -9,14 +10,14 @@ export default function Home() {
       <HeroSection
         imageSrc="/lohri-celebration-india.jpg"
         imageAltText="all types of instruments"
-        bgFilterOpacity={50}
+        bgFilterOpacity={65}
         HeroTitle={`Welcome to ${organization.name}`}
-        HeroSubTitle="Experience the Essence of Indian Classical Music"
+        HeroSubTitle="Affiliated with Akhil Bharatiya Gandharva Mahavidyalaya Mandal, Mumbai"
         ButtonText="Explore Courses"
         url="/courses"
       />
       <AboutUs />
-      {/* Courses Section */}
+      <BadgeSection />
     </>
   );
 }
