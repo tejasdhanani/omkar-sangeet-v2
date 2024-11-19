@@ -19,8 +19,9 @@ export default function HeroSection({
         alt={imageAltText}
         layout="fill"
         objectFit="cover"
+        // objectPosition="left"
         quality={100}
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 -z-10 object-[10%_50%]"
         priority
       />
 
