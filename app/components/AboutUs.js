@@ -12,7 +12,7 @@ export default function AboutUs() {
           {/* Image Section */}
           <div className="mt-6 lg:order-2 lg:mt-0 lg:w-1/2">
             <img
-              src="/gallery/Ongoing Class 4 Omkar Sangeet.jpeg" // Replace with your image path
+              src="/class of omkar sangeet mahavidyalaya.jpg" // Replace with your image path
               alt="Omkar Sangeet Image"
               className="h-full w-full rounded-lg object-cover shadow-lg"
             />
