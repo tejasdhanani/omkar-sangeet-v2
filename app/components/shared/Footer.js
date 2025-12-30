@@ -34,10 +34,10 @@ export const Footer = () => {
           Made with &hearts; by{" "}
           <Link
             className="border-b border-white pb-0.5"
-            href="https://tejasdhanani-portfolio.netlify.app"
+            href="https://inphisoft.com"
             target="_blank"
           >
-            Tejas Dhanani
+            Inphisoft
           </Link>
         </p>
       </div>
