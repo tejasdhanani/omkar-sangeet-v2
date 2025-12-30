@@ -9,7 +9,7 @@ export const organization = {
   address:
     "F-3, Panchvilla Tower, Nr B.D.Rao Hall, Bhuyangdev to Memnagar Rd, Bhuyangdev Cross Rd, Ahmedabad, Gujarat 380052, India",
   phoneNums: ["97259 20213", "95370 44726"],
-  email: "omkarsangeet1071@gmail.com",
+  email: "info@omkarsangeet.com",
   socialMediaLinks: [
     {
       platform: "Facebook",
