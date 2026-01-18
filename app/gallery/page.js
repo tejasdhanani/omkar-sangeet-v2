@@ -22,8 +22,7 @@ export default function GalleryPage() {
               alt={`Gallery Image ${index + 1}`}
               width={400}
               height={300}
-              layout="responsive"
-              objectFit="cover"
+              style={{ width: "100%", height: "auto", objectFit: "cover" }}
             />
           </div>
         ))}

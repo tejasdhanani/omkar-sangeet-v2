@@ -17,11 +17,11 @@ export default function HeroSection({
       <Image
         src={imageSrc} // Replace with your image path
         alt={imageAltText}
-        layout="fill"
-        objectFit="cover"
+        fill
         // objectPosition="left"
         quality={100}
         className="absolute inset-0 -z-10 object-[10%_50%]"
+        style={{ objectFit: "cover" }}
         priority
       />
 
