@@ -16,7 +16,7 @@ export default function CoursesPage() {
         <h2 className="mb-8 text-center text-3xl font-extrabold text-gray-900">
           Courses
         </h2>
-        <div className="text-center text-xl">2 x 45 mins Weekly Classes</div>
+        {/* <div className="text-center text-xl">2 x 45 mins Weekly Classes</div> */}
         <div className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((course) => (
             <div
