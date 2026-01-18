@@ -1,12 +1,12 @@
 export default function CoursesPage() {
   const courses = [
-    { name: "Harmonium", imageSrc: "/harmonium.jpg", opacity: 60 },
-    { name: "Vocals", imageSrc: "/vocals.jpg", opacity: 55 },
-    { name: "Guitar", imageSrc: "/guitar.jpg", opacity: 50 },
-    { name: "Keyboard", imageSrc: "/piano.jpg", opacity: 50 },
-    { name: "Kathak", imageSrc: "/kathak.jpg", opacity: 50 },
-    { name: "Tabla", imageSrc: "/tabla.jpg", opacity: 50 },
-    { name: "Sugam", imageSrc: "/sugam.jpg", opacity: 50 },
+    { id: 1, name: "Harmonium", imageSrc: "/harmonium.jpg", opacity: 60 },
+    { id: 2, name: "Vocals", imageSrc: "/vocals.jpg", opacity: 55 },
+    { id: 3, name: "Guitar", imageSrc: "/guitar.jpg", opacity: 50 },
+    { id: 4, name: "Keyboard", imageSrc: "/piano.jpg", opacity: 50 },
+    { id: 5, name: "Kathak", imageSrc: "/kathak.jpg", opacity: 50 },
+    { id: 6, name: "Tabla", imageSrc: "/tabla.jpg", opacity: 50 },
+    { id: 7, name: "Sugam", imageSrc: "/sugam.jpg", opacity: 50 },
     // Add more courses here
   ];
 
@@ -18,9 +18,9 @@ export default function CoursesPage() {
         </h2>
         <div className="text-center text-xl">2 x 45 mins Weekly Classes</div>
         <div className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {courses.map((course, index) => (
+          {courses.map((course) => (
             <div
-              key={index}
+              key={course.id}
               className="relative overflow-hidden rounded-lg shadow-lg"
             >
               <img

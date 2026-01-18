@@ -13,11 +13,11 @@ export default function ContactUs() {
           {organization.email}
         </Link>
       </p>
-      {organization.phoneNums.map((phoneNum) => (
-        <div>
+      {organization.phoneNums.map((phone) => (
+        <div key={phone.id}>
           Phone:&nbsp;
-          <Link href={`tel:+91${phoneNum}`} className="underline">
-            {phoneNum}
+          <Link href={`tel:+91${phone.number}`} className="underline">
+            {phone.number}
           </Link>
         </div>
       ))}

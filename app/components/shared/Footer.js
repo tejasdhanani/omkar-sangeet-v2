@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="bg-primary text-white">
       <div className="container mx-auto flex flex-wrap justify-between py-8">
         {footerSections.map((section) => (
-          <div className="mb-6 w-full px-4 md:mb-0 md:w-1/3">
+          <div key={section.id} className="mb-6 w-full px-4 md:mb-0 md:w-1/3">
             <h3 className="mb-4 text-xl">{section.title}</h3>
             {section.content}
           </div>

@@ -5,7 +5,7 @@ export default function SocialMedia() {
   return (
     <div className="social-media-buttons flex space-x-4">
       {socialMediaPlatforms.map((platform) => (
-        <Link key={platform.name} href={platform.url} target="_blank">
+        <Link key={platform.id} href={platform.url} target="_blank">
           <button
             type="button"
             className={`mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg`}
