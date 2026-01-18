@@ -33,13 +33,13 @@ export const Header = () => {
             className="flex items-center justify-center text-2xl font-bold text-primary sm:text-3xl"
           >
             <Image
-              src="/Omkar Sangeet logo.png"
-              className="h-28 w-28"
+              src="/Omkar Sangeet Mahavidyalaya Logo Maroon.png"
+              // className="h-28 w-28"
               width={100}
               height={100}
               alt="Picture of the author"
             />
-            <div>
+            <div className="pl-3">
               {organization.logo}
               {/* <p className="text-xs text-secondary">(ABGMVM affiliated)</p> */}
             </div>
